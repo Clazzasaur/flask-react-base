@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
+import os
 
 app = Flask(__name__, static_url_path='',
                   static_folder='../react-frontend/build',
